@@ -17,7 +17,7 @@ public class Main {
         try {
             matrix1.filling(arr1);
             matrix2.filling(arr2);
-        } catch (MatrixException e){
+        } catch (MatrixException e) {
             System.err.print(e.getMessage());
             return;
         }
@@ -25,28 +25,28 @@ public class Main {
             Matrix matrix3 = matrix1.summing(matrix2);
             System.out.print("Sum of matrices: \n");
             matrix3.show();
-        } catch (MatrixException e){
+        } catch (MatrixException e) {
             System.err.print(e.getMessage());
         }
         try {
             Matrix matrix5 = matrix1.subtract(matrix2);
             System.out.print("Subtraction of matrices: \n");
             matrix5.show();
-        } catch (MatrixException e){
+        } catch (MatrixException e) {
             System.err.print(e.getMessage());
         }
         try {
             Matrix matrix4 = matrix1.multiply(matrix2);
             System.out.print("Multiply of matrices: \n");
             matrix4.show();
-        } catch (MatrixException e){
+        } catch (MatrixException e) {
             System.err.print(e.getMessage());
         }
         try {
             Matrix matrix6 = matrix1.multiply_strassen(matrix2);
             System.out.print("Multiply of matrices with Strassen algorithm \n");
             matrix6.show();
-        } catch (MatrixException e){
+        } catch (MatrixException e) {
             System.err.print(e.getMessage());
         }
         Matrix matrix7 = matrix1.transpose();
@@ -64,7 +64,7 @@ public class Main {
             Matrix matrix8 = matrix1.division(matrix2);
             System.out.print("Division of the 1-st and 2-nd matrices: \n");
             matrix8.show();
-        } catch (MatrixException | DetException | ArithmeticException e){
+        } catch (MatrixException | DetException | ArithmeticException e) {
             System.err.print(e.getMessage());
         }
     }
